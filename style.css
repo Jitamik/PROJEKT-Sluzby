@@ -1,0 +1,124 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+
+body {
+    background-color: #FAFAFA;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    color: #8B8B8B;
+    text-align: center;
+}
+
+.turista {
+    min-width: 350px;
+    min-height: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hlavni-nadpis {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+.text-pod-nadpisy {
+    font-size: 16px;
+}
+.text-u-ikon {
+    font-size: 13px;
+}
+button {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.tlacitka {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.dobrodruzstvi {
+    width: 195px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    background-color: #407BFF;
+}
+.plaz {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #8B8B8B;
+}
+.boxik {
+    display: flex;
+    justify-content: flex-start;
+    width: 460px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px;
+}
+.text-u-ikon {
+    margin-left: 30px;
+    margin-top: 32px;
+}
+.ikona {
+    max-width: 45px;
+    max-height: 40px;
+    margin: 20px;
+}
+
+@media screen and (min-width: 640px) {
+    .tlacitka {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .plaz {
+        margin-left: 20px;
+    }
+    .sluzby {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text-pod-nadpisy {
+        flex: 1 1 100%;
+    }
+    .boxik {
+        flex: 1 0 calc(100% - 30 / 3);
+        justify-content:center;
+        width: 230px;
+
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .sekce-turista-travels {
+        display: flex;
+    }
+    .leva {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+    }
+}
