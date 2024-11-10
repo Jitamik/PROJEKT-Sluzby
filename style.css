@@ -48,6 +48,7 @@ button {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: white;
+    border: 0;
 }
 .tlacitka {
     display: flex;
@@ -106,19 +107,93 @@ button {
     }
     .boxik {
         flex: 1 0 calc(100% - 30 / 3);
-        justify-content:center;
         width: 230px;
-
+        height: 172px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-u-ikon {
+        margin: 0;
+        padding: 20px;
+    }
+    .ikona {
+        margin-bottom: 0;
     }
 }
 
 @media screen and (min-width: 1100px) {
-    .sekce-turista-travels {
+    body {
+        max-width: 1040px;
+       margin-left: auto;
+       margin-right: auto;
+        
+    }
+    h2 {
+        text-align: start;
+    }
+    .kontejner {
         display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
     }
     .leva {
         display: flex;
         flex-direction: column;
-        flex: 0 0 auto;
+        width: 488px;
+        
+    }
+    .prava {
+        display: flex;
+    }
+    h1 {
+        text-align:left;
+    }
+    .text-pod-nadpisy {
+        text-align: left;
+    }
+    .tlacitka {
+        justify-content: left;
+    }
+    .sluzby1 {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        
     }
 }
+    .sluzby2 {
+    display: flex;
+    margin-top: 80px;
+}
+
+    .nadpis-a-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        justify-content: flex-end;
+
+    }
+    .boxiky {
+        display: flex;
+        max-width: 550px; }
+
+    .boxik {
+        width: 168px;
+        height: 190px;
+        box-shadow: 0px 4px 6px #407BFF1F;
+
+
+    }
+    .nadpis-a-text2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        justify-content: flex-start;
+
+    
+
+}
+
+
