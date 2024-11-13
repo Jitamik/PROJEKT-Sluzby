@@ -27,6 +27,34 @@ p {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+
+h1 {
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+ /*.hlavni-nadpis::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+   background-color: #407BFF;
+   margin-top: 10px;}*/
+
+   h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;             /* Umístí čáru pod nadpis */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #407BFF;
+}
+
+
 h2 {
     font-size: 16px;
     font-weight: bold;
@@ -78,6 +106,7 @@ button {
     background-color: white;
     border-radius: 10px;
     margin: 15px;
+    box-shadow: 0px 4px 6px #407BFF1F;
 }
 .text-u-ikon {
     margin-left: 30px;
@@ -97,13 +126,28 @@ button {
     .plaz {
         margin-left: 20px;
     }
-    .sluzby {
+    .sluzby1,
+    .sluzby2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .text-pod-nadpisy {
+        width: 550px;
+        height: 55px;
+        margin-left: 0;
+        margin-right: 0;
         flex: 1 1 100%;
+        text-align: center;
+       
+
+    }
+    .boxiky1,
+    .boxiky2 {
+        display: flex;
+        flex-wrap: wrap;
+
     }
     .boxik {
         flex: 1 0 calc(100% - 30 / 3);
@@ -111,6 +155,7 @@ button {
         height: 172px;
         flex-direction: column;
         align-items: center;
+        box-shadow: 0px 4px 6px #407BFF1F;
     }
     .text-u-ikon {
         margin: 0;
@@ -126,7 +171,6 @@ button {
         max-width: 1040px;
        margin-left: auto;
        margin-right: auto;
-        
     }
     h2 {
         text-align: start;
@@ -141,15 +185,32 @@ button {
         flex-direction: column;
         width: 488px;
         
+        
     }
     .prava {
         display: flex;
+        justify-content: center;
     }
     h1 {
         text-align:left;
+        position: relative;
+        margin-top: 60px;
     }
+    h1::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background-color: #407BFF;
+    }
+   
     .text-pod-nadpisy {
         text-align: left;
+        max-width: 430px;
+        max-height: 76px;
+        
     }
     .tlacitka {
         justify-content: left;
@@ -160,40 +221,57 @@ button {
         justify-content: space-between;
         margin-top: 80px;
 
+    }
+    .sluzby2 {
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         
     }
-}
-    .sluzby2 {
-    display: flex;
-    margin-top: 80px;
-}
-
-    .nadpis-a-text {
-        display: flex;
-        flex-direction: column;
-        max-width: 430px;
-        justify-content: flex-end;
-
-    }
-    .boxiky {
-        display: flex;
-        max-width: 550px; }
-
-    .boxik {
-        width: 168px;
-        height: 190px;
-        box-shadow: 0px 4px 6px #407BFF1F;
-
-
-    }
-    .nadpis-a-text2 {
-        display: flex;
-        flex-direction: column;
-        max-width: 430px;
-        justify-content: flex-start;
-
     
+     .nadpis-a-text {
+            display: flex;
+            flex-direction: column;
+            max-width: 430px;
+            justify-content: flex-end;
+    
+        }
+     .boxiky1 {
+            display: flex;
+            max-width: 550px;
+            flex-wrap: nowrap;
+         }
 
+         .boxiky2 {
+            display: flex;
+            max-width: 550px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+         }
+    
+     .boxik {
+            width: 170px;
+            flex: 1 0 calc(100% - 40 / 3);
+            height: 191px;
+            box-shadow: 0px 4px 6px #407BFF1F;
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    .nadpis-a-text2 {
+            display: flex;
+            flex-direction: column;
+            max-width: 430px;
+            max-height: 76px;
+            justify-content: flex-start;
+            margin-right: 75px;
+    
+        
+    
+    }
 }
+   
 
 
