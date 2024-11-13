@@ -164,6 +164,10 @@ button {
     .ikona {
         margin-bottom: 0;
     }
+    .leva {
+        display: grid;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -200,7 +204,7 @@ button {
         content: "";
         position: absolute;
         bottom: -10px;
-        left: 0;
+        left: 30px;
         width: 60px;
         height: 2px;
         background-color: #407BFF;
